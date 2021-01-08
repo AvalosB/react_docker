@@ -1,0 +1,13 @@
+version: '3'
+
+services: 
+  api:
+    build: api_server/
+    ports: 
+      - '3002:3002'
+
+  frontend:
+    build: library-react/
+    ports: 
+      - '3001:3001'
+    
